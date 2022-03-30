@@ -16,7 +16,7 @@ defmodule RegularTask.MixProject do
     [
       extra_applications: [:logger],
       env: [leeroy: "oyoy", tzone: "Japan"],
-      mod: {RegularTask.Application, []},
+      mod: {RegularTask.Application, []}
     ]
   end
 
@@ -25,7 +25,10 @@ defmodule RegularTask.MixProject do
     [
       {:tzdata, "~> 1.1"},
       {:ecto_sql, "~> 3.0"},
-      {:postgrex, ">= 0.0.0"}
+      {:postgrex, ">= 0.0.0"},
+      {:httpoison, "~> 1.7"},
+      {:floki, ">= 0.32.1"},
+      {:typed_struct, "~> 0.1.4"}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]

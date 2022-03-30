@@ -17,6 +17,6 @@ defmodule RegularTask do
   end
 
   def main do
-    IO.puts "running project"
+    IO.puts("running project")
   end
 end

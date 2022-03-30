@@ -10,8 +10,6 @@ defmodule RegularTask.Application do
       RegularTask.Repo
     ]
 
-    Supervisor.start_link(children, [strategy: :one_for_one, name: RegularTask.Supervisor])
-
+    Supervisor.start_link(children, strategy: :one_for_one, name: RegularTask.Supervisor)
   end
-
 end
